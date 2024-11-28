@@ -1,8 +1,16 @@
+/**
+ * Класс для поиска ближайших меньшего и большего элементов в массиве целых чисел.
+ */
 public class ClosestNumbers {
 
-
+    /**
+     * Метод для поиска ближайших меньшего и большего элементов в массиве целых чисел.
+     *
+     * @param numbers Массив целых чисел.
+     * @param target  Целевое число.
+     * @return Массив из двух элементов: ближайший меньший и ближайший больший элементы.
+     */
     public static int[] findClosestNumbers(int[] numbers, int target) {
-        int[] result = new int[2];
         int closestSmaller = Integer.MIN_VALUE;
         int closestLarger = Integer.MAX_VALUE;
 
@@ -14,21 +22,6 @@ public class ClosestNumbers {
             }
         }
 
-        result[0] = closestSmaller;
-        result[1] = closestLarger;
-
-        return result;
-    }
-
-    public static void main(String[] args) {
-        int[] numbers = {10, 20, 30, 40, 50};
-        int target = 35;
-
-
-        int[] result = findClosestNumbers(numbers, target);
-
-
-        System.out.println("Closest smaller: " + result[0]);
-        System.out.println("Closest larger: " + result[1]);
+        return new int[]{closestSmaller, closestLarger};
     }
 }

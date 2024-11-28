@@ -1,6 +1,14 @@
 import java.util.Set;
 
+/**
+ * Основной класс для демонстрации использования методов из других классов.
+ */
 public class Main {
+    /**
+     * Основной метод программы.
+     *
+     * @param args Аргументы командной строки.
+     */
     public static void main(String[] args) {
 
         int[] numbers = {1, 2, 3, 2, 1, 4};
